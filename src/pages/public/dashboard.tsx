@@ -69,13 +69,13 @@ export function Dashboard() {
                             </div>
                             <div className="space-y-1 md:space-y-2">
                                 <div className="text-xs ">Balance</div>
-                                <div className="text-lg md:text-xl font-bold">$15,180.50</div>
+                                <div className="text-lg md:text-xl font-bold text-white">$15,180.50</div>
                                 <div className="flex justify-between items-end">
                                     <div>
                                         <div className="text-xs">Expires</div>
                                         <div className="text-sm">05/23</div>
                                     </div>
-                                    <div className="text-sm">••••••••2595</div>
+                                    <div className="text-sm text-white">••••••••2595</div>
                                 </div>
                             </div>
                         </CardContent>
@@ -87,13 +87,13 @@ export function Dashboard() {
                             </div>
                             <div className="space-y-1 md:space-y-2">
                                 <div className="text-xs ">Balance</div>
-                                <div className="text-lg md:text-xl font-bold">$15,180.50</div>
+                                <div className="text-lg md:text-xl font-bold text-white">$15,180.50</div>
                                 <div className="flex justify-between items-end">
                                     <div>
                                         <div className="text-xs">Expires</div>
                                         <div className="text-sm">05/23</div>
                                     </div>
-                                    <div className="text-sm">••••••••2595</div>
+                                    <div className="text-sm text-white">••••••••2595</div>
                                 </div>
                             </div>
                         </CardContent>
