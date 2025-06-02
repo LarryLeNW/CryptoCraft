@@ -1,5 +1,5 @@
+import { NavLink } from "react-router-dom"
 import { menuItems } from "../../constant/menus/main"
-import { Button } from "../../components/ui/button"
 
 export function MobileNav() {
 
@@ -9,16 +9,27 @@ export function MobileNav() {
         {menuItems.map((item) => {
           const Icon = item.icon
           return (
-            <Button
+            <NavLink
               key={item.id}
-              variant="ghost"
-              size="sm"
-              className={`flex flex-col items-center py-2 px-1 h-auto ${false ? "text-blue-500" : "text-gray-500 dark:text-gray-400"
-                }`}
+              to={item.path}
+              className={({ isActive }) =>
+                `flex flex-col items-center h-auto justify-center py-2 px-1 rounded transition-all ${isActive
+                  ? "bg-blue-500 text-white hover:bg-blue-600 "
+                  : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                }`
+              }
             >
-              <Icon className="w-5 h-5 mb-1" />
-              <span className="text-xs">{item.label}</span>
-            </Button>
+              {({ isActive }) => (
+                <>
+                  <Icon className={`w-5 h-5 mb-1 ${isActive && "w-6 h-6 mb-0"}`} />
+                  {
+                    !isActive && <span className={"text-xs"}>
+                      {item.label}
+                    </span>
+                  }
+                </>
+              )}
+            </NavLink>
           )
         })}
       </div>
