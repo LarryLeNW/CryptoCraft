@@ -2,12 +2,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import paths from "./constant/path";
 import { MobileNav } from "./layout/public/mobile-nav";
 import { Sidebar } from "./layout/public/sidebar";
-import { Dashboard } from "./pages/public/dashboard";
-import Markets from "./pages/public/markets";
-import News from "./pages/public/news";
-import Portfolio from "./pages/public/portfolio";
-import Profile from "./pages/public/profile";
-import Wallet from "./pages/public/wallet";
+import { Dashboard } from "./pages/public/Dashboard";
+import Markets from "./pages/public/Markets";
+import News from "./pages/public/News";
+import Portfolio from "./pages/public/Portfolio";
+import Profile from "./pages/public/Profile";
+import Wallet from "./pages/public/Wallet";
 
 function App() {
     return (

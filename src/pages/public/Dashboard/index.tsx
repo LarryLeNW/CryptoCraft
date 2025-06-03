@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BarChart3, Bell, Bitcoin, Grid3X3, PiggyBank, TrendingDown, TrendingUp } from "lucide-react";
 import { Avatar } from "radix-ui";
-import { Button } from "../../components/ui/button";
+import { Button } from "../../../components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
