@@ -20,6 +20,9 @@ const config = {
 			},
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+			},
 			backgroundImage: {
 				'card-gradient': 'linear-gradient(to right, #4f46e5, #3b82f6)'
 			},

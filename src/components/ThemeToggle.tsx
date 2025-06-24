@@ -19,9 +19,11 @@ export function ThemeToggle() {
     return (
         <button
             onClick={() => setIsDark(!isDark)}
-            className="p-2 rounded border bg-muted hover:bg-muted-foreground text-sm"
+            className="p-2 text-lg flex items-center justify-center transition-colors duration-500"
         >
-            {isDark ? "☀️ Light" : "🌙 Dark"}
+            <span style={{ textShadow: "0 0 8px #facc15" }}>
+                {isDark ? "☀️" : "🌙"}
+            </span>
         </button>
     );
 }

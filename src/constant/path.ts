@@ -1,10 +1,11 @@
 const paths = {
     PUBLIC:
     {
-        HOME: "/",
         ALL: "*",
-        LOGIN: "/login",
-        FORGOT_PASSWORD: "/forgot-password/:type",
+        LOGIN: "/",
+        HOME: "/home",
+        FORGOT_PASSWORD: "/forgot-password",
+        REGISTER: "/register",
         CONFIRM_REGISTER: "/confirm-register/:token",
         NEWS: "/news",
         PORTFOLIO: "/portfolio",
